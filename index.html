@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+    
+	<title>Easy German</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="showSlides()">
+	
+<!-- FADE IMAGES -->
+<img class="germany_img" src="images/germany.jpg">
+
+<!-- HEADER -->
+	<header>
+		<h1><a href="index.html">Easy<br class="head_break"><span id="german">German</span></a></h1>
+
+			<!-- ENTER OWN WORDS -->
+			<div class="own-words-div">
+				<button class="own-words-button">Enter your words(demo)</button>
+
+				<aside class="own-words">
+					<input type="text" name="ownWords" id="own_words">
+					<input type="submit" name="add_word" onclick="add_word()" value="Add your word">
+					<input type="submit" name="startOwn" onclick="start_own()" value="Start testing !">
+					<i class="material-icons info">info</i>
+					<p>Please enter a valid word with an appropriate article</p>
+				</aside>
+			</div>
+
+			<nav class="menu">
+				<p class="lections_header">Lections</p>
+				<ul class="dropdown-content">
+					<li class="words" onclick="lektion_1()">Lection 1</li>
+					<li class="words" onclick="lektion_2()">Lection 2</li>
+					<li class="words" onclick="lektion_3()">Lection 3</li>
+					<li class="words" onclick="lektion_4()">Lection 4</li>
+					<li class="words" onclick="lektion_5()">Lection 5</li>
+					<li class="words" onclick="lektion_6()">Lection 6</li>
+					<li class="words" onclick="lektion_7()">Lection 7</li>
+					<li class="words" onclick="lektion_8()">Lection 8</li>
+				</ul>
+			</nav>
+
+	</header>
+
+<aside class="vysledok">
+	<p id="points">Points:</p>
+	<p id="cislo_points">0<p id="lecPoints"></p></p>
+	<p id="lektion"></p>
+</aside>
+
+<!-- TEST BOX -->
+<content>
+	<p id="test_word">Please choose the lection</p>
+	
+<div id="test_box">
+	<div class="button-divs">
+		<button class="buttons" id="button_der" onclick="click_der()">DER</button>
+	</div>
+
+	<div class="button-divs">
+		<button class="buttons" id="button_die" onclick="click_die()">DIE</button>
+	</div>
+
+	<div class="button-divs">
+		<button class="buttons" id="button_das" onclick="click_das()">DAS</button>
+	</div>
+</div>
+
+
+
+<span id="wrongx" class="material-icons wrong">clear</span>
+
+<span id="correctx" class="material-icons correct">done</span>
+
+<!-- FACTS -->
+<!-- <aside>
+	<div class="facts">
+	<h2>Did you know ?</h2>
+
+	<p id="stringF"></p>
+	<div class="mySlides fade">
+		<p>German is the 11th most widely spoken language in the world</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>English and German share 60% of their vocabulary</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>Besides Germany, German is the official language of both Austria and Liechtenstein and one of the official languages in Switzerland and Luxembourg</p>
+	</div>
+	
+	<div class="mySlides fade">
+		<p><q>In German, a young lady has no sex, but a turnip does</q> - Mark Twain</p>
+	</div>	
+
+	<div class="mySlides fade">
+		<p>The longest word in German has 79 letters - <b>Donaudampfschiffahrtselektrizitätenhauptbetriebswerkbauunterbeamtengesellschaft</b> meaning  'association of subordinate officials of the head office management of the Danube steamboat electrical services'</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>September 14th is German Language Day</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>German is the most widely spoken mother language in the EU and is an official language in 7 countries</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>The Gutenberg Bible was the first-ever printed book by movable type and it was written in German by Johannes Gutenberg in 1454.</p>
+	</div>
+
+	<div class="mySlides fade">
+		<p>The German alphabet contains an extra consonant, ß, called “Eszett” representing the double-S</p>
+	</div>
+</div>
+</aside> -->
+
+<!-- 
+	<p>Source: https://theculturetrip.com/europe/germany/articles/12-fascinating-facts-about-the-german-language <br>https://www.languageinsight.com/blog/2019/facts-german-language/</p>
+	 -->
+
+
+
+</content>
+
+
+<footer>
+	<p id="year"></p>
+	<div class="flags">
+		<img src="images/germany.jpg" alt="">
+		<img src="images/austria.png" alt="">
+		<img src="images/switzerland.png" alt="">
+	</div>
+</footer>
+
+<script src="jquery-3.5.1.js"></script>
+<script src="skript.js"></script>
+</body>
+</html>

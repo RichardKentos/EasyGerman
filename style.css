@@ -1,0 +1,779 @@
+/* {outline: 2px solid red} */
+
+@font-face {
+	font-family: 'WebFont';
+	src: url('WebFont.ttf');
+}	
+
+* {font-family: 'Gruppo';
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+	padding: 0;
+	margin: 0;
+		}
+	
+
+header {
+	background-color: rgb(29, 29, 29);
+	margin: 0 0 3% 0;
+	position: relative;
+	border-bottom: 4px solid #ffce00;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;	
+	font-size:2em;
+	color: #ffce00;
+	width: 25%;
+	height: 100%;
+	border-right: 4px solid #ffce00;
+}
+	 	
+
+#german {
+	margin-left: 40%;
+		}
+
+header a {
+	text-decoration: none;
+	color: #ffce00;
+	width: 100%
+	}		
+
+/* MENU - LEKCIE */ 
+.menu {
+	position: relative;
+	right: 0;
+	width: 25%;
+	align-self: flex-end;
+		}
+
+.menu:hover {
+	cursor: pointer;
+	transition: 0.3s
+}
+
+.menu:hover .dropdown-content {
+	display: block;
+}
+
+.lections_header {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 900;
+	color: #ffce00;
+}
+
+.dropdown-content {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.3em;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 100;
+}
+
+.dropdown-content li {
+	display: block;
+	text-align: center;
+	padding: 3%;
+	width: 100%;
+	z-index: 100;
+}
+
+.dropdown-content li:hover{
+	color: white;
+	background-color:  #ffce00;
+}
+
+/* NUMBER OF POINTS AND LECTIONS */
+.vysledok {
+	max-width: 20%;
+	height: auto;
+	font-weight: bold;
+	margin: 0 5%;
+	}
+
+#points {
+	display: inline;
+	font-size: 2em
+	}
+
+#cislo_points {
+	display: inline;	
+	font-size: 2em;
+		}
+
+#lecPoints {
+	display: inline;
+	font-size: 2em
+		}
+
+/* ASIDE */
+.own-words-div {
+	align-self: center;
+}
+
+.own-words-button {
+	font-size: 1.5em;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #ffce00;
+	}
+
+.own-words-button:hover {
+	transition: 0.2s
+
+}
+
+.own-words {
+	display: none;
+	position: absolute;
+	background-color: rgb(29, 29, 29);
+	z-index: 2;
+	font-size: 1.3em;
+	font-weight: bold;
+	border: 4px solid #ffce00;;
+	padding: 2%;
+}
+
+.own-words input {
+	width: 50%;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	margin: auto;
+	display: block;
+	margin-top: 3%
+	}
+
+.own-words input:focus {
+	background-color: #ffce00;
+	transition: 0.4s
+					}	
+
+
+.own-words i {
+	width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+	color: #ffce00;
+		}		
+
+.own-words p {
+	text-align: center;
+ 	color: white;
+		}
+
+			
+/* TEST BOX - DER DIE DAS */
+content {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	margin-top: -5%;
+}
+
+#test_word {
+	text-align: center;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 2% 0;
+	margin: 5% 25%;
+	font-size: 2.5em;
+	color: white;
+	background-color: rgb(29, 29, 29);
+	border: 5px solid #ffce00;
+	border-radius: 15px;
+	}
+
+#lektion {
+	position: relative;
+	font-size: 1.5em
+		}	
+
+#test_box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+
+.button-divs {
+	width: 20%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.buttons {
+	background-color: rgb(29, 29, 29);
+	color: white;
+	border-radius: 20px;
+	width: 30%;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	padding: 5%;
+	font-family: 'Gruppo'; 
+	outline: none;
+	border: 3px solid #ffce00;
+	transition: 0.2s;
+}
+
+.buttons:hover {
+	color: #ffce00;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+
+/* Authentication */
+.wrong {
+	position: absolute;
+	font-size: 10em;
+	color: red;
+	z-index: 2;
+				} 
+
+.correct {
+	position: absolute;
+	font-size: 10em;
+	color: green;
+	z-index: 2;
+}
+
+
+/* SLIDESHOW */
+
+
+.facts {background-color: #ff3333;
+		position: relative;
+		float: right;
+		display: block;
+		clear: both;
+		margin-top: -31%;
+		border-radius: 10%;
+		text-align: center;
+		overflow: visible;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		width: 23%;
+		transition: 1s;
+		font-weight: bold;
+		font-size: 1.3em
+	}
+
+.mySlides {
+	display: none;
+	padding: 5%;
+	text-align: center;
+	overflow: visible;
+	margin: 0;
+	
+}
+
+.fade {
+	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 2s;
+ 	animation-name: fade;
+  	animation-duration: 2s;
+}	
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
+footer {
+		position: relative;
+		background-color: rgb(29, 29, 29);
+		border-top: 4px solid #ffce00;
+		color: #ffce00;
+		font-weight: bold;
+		font-size: 1.5em;
+		}
+
+footer p {
+	display: block;
+	text-align: center;
+}
+
+footer .flags {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer .flags img {
+	width: 5%;
+}
+
+/* footer > .flag {
+	margin-left: 7%;
+}
+
+footer > .flag ~ .flag {
+	margin-left: none
+}	 */
+
+/* .flag {
+	display: inline-block;
+	border-radius: 20%;
+	width: 5%;
+	height:auto;
+	margin-right: 10%;
+			}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESIGN PRE MOBILY - OTOČENÉ NA VÝŠKU */
+
+	@media only	screen
+				and (min-width: 320px)
+				and	 (max-width: 480px)
+				and (orientation: portrait)
+							{
+
+@font-face {
+
+		font-family: 'WebFont';
+		src: url('WebFont.ttf');
+}	
+
+* {font-family: 'Gruppo'; }
+
+body {
+		margin:0;
+		padding: 0;
+		overflow: visible;
+		}
+
+.travel {
+	height: auto;
+	width: 100vw;
+}
+.germany_img {
+			border-radius: 50%;
+			position: absolute;
+			top: 25%;
+			bottom: 0;
+			left:35%;
+			right: 0;
+			width: 30%;
+			height: 15%;
+			z-index: 2;
+			}		
+
+.fade-out {
+	animation: fadeOut 4s forwards;
+	-webkit-animation: fadeOut 4s forwards;
+  	-moz-animation:fadeOut 4s forwards;
+  	-o-animation:fadeOut 4s forwards;
+  	-ms-animation: fadeOut 4s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+/* THE HEADING */
+
+header {border-radius:0%;
+		margin-right: -10%;
+		z-index: 1;
+		width: 100vw}
+
+header h1 {font-weight: bolder;
+			font-size: 2.5em;
+			margin-left: -10%;
+			}		
+header a {width: 100%; }
+
+#german {
+		margin-left:45%;
+}
+
+/* LECTIONS MENU - BURGER */
+
+.burger {
+		display: block;
+		font-size: 2em;
+		background-color: #ff3333;
+		color: black;
+}
+
+.menu_align {
+	text-align: left;
+}
+
+.menu {
+	width: 10%;
+	border: none;
+	
+}
+
+.lections_p {
+		display: none; }
+
+.dropdown-content {
+	position: absolute;
+	height: 1150%;
+	z-index: 5;
+	background-color: #ff3333;
+	color: white;
+	left:0;
+}
+
+.words {
+	border-bottom: 2px solid white;
+}
+
+
+
+/* NUMBER OF POINTS AND LECTIONS */
+.vysledok {
+	display:none;
+	border-radius: 0;
+	margin-left: 0;
+	margin-top: 5%;
+	padding: 0;
+
+		}
+
+#points {
+	display:none;
+	font-size: 1.2em;
+
+		}
+
+#cislo_points {
+	display: none;
+	font-size: 1.2em;
+
+	}		
+
+#lecPoints {
+	display: none;
+	font-size: 1.2em;
+
+}
+
+#lektion {
+	display: none;
+	font-size: 1.2em;
+
+}
+
+/* ENTERING OWN WORDS */
+.enter-own {
+	display: none;
+	}		
+
+/* TEST BOX - DER DIE DAS */
+content {
+	position: relative;
+	z-index: -1;
+}
+
+#text_box {width: 100%;
+			display: block;
+			position: relative;
+			
+			}
+
+#test_word {
+	text-align: center;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-bottom: 5%;
+	margin-bottom: 10%;
+	margin-left: 0;
+	font-size: 250%;
+	border:none;
+	z-index: -1;	
+	}
+
+#der {width: 20%;
+	margin-left:5%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	}
+
+#button_der  {background-color: #0066ff;
+			font-size: 180%;
+			font-weight: bold;
+			width: 100%;
+			padding: 5%;
+			color: white;
+			font-family: 'Gruppo'; 
+			border-radius: 12%}		
+
+#button_der:hover {
+	background-color: #0066ff;
+	color: black;
+}			
+	
+
+#die {width: 20%;
+	margin-left: 15%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	}
+
+#button_die  {background-color: #ff1a1a;
+			font-size: 180%;
+			font-weight: bold;
+			width: 100%;
+			padding: 5%;
+			color: white;
+			font-family: 'Gruppo'; 
+			border-radius: 12%}	
+
+#button_die:hover {
+	background-color: #ff1a1a;
+	color: black;
+}			
+
+
+#das {width: 20%;
+	margin-left: 15%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	}
+
+#button_das {background-color: #009900;
+			font-size: 180%;
+			font-weight: bold;
+			width: 100%;
+			padding: 5%;
+			color: white;
+			font-family: 'Gruppo'; 
+			border-radius: 12%}	
+
+#button_das:hover {
+	background-color: #009900;
+	color: black;
+}		
+
+
+
+.wrong {position: absolute;
+		top: 20%;
+		color: red;
+				} 
+
+.correct {
+	position: absolute;
+	top: 25%;
+	color: green;
+}
+
+
+.facts {
+		display: none;
+			}
+
+footer {
+	position: relative;
+	z-index: 1;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-top: 70%;	
+}
+
+.flag {
+	width: 20%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+
+
+
+}
+
+
+
+
+
+/* DESIGN PRE MOBILY - OTOČENÉ NA ŠÍRKU */
+
+	@media only screen
+		and (min-device-width: 481px)
+		and (max-device-width: 1023px)
+		and (orientation: landscape)
+				
+			{
+@font-face {
+
+		font-family: 'WebFont';
+		src: url('WebFont.ttf');
+}	
+
+* {font-family: 'WebFont', sans-serif; }
+
+body {
+		margin-right: 1%;
+		}
+
+#points {display: inline;
+		font-size: 200%;}
+#vysledok {display: inline;	
+			font-size: 200%;}
+
+#logo {position: fixed;
+	width: 7%;
+	height: auto;
+		top: 20px;
+		right: 100px;
+		border-radius: 50%;}
+
+/* TEST BOX - DER DIE DAS */
+#text_box {width: 100%;
+			display: block;
+			position: relative;
+			
+			}
+
+#test_word {text-align: center;
+			position: relative;
+		display: block;
+		width: 50%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		margin-bottom: 10%;
+		margin-left: 25%;
+		font-size: 250%;
+		border-top: 2px dashed black;
+		border-bottom: 2px dashed black;
+		
+	}
+
+#der {width: 33.3%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	}
+
+#button_der  {background-color: #0066ff;
+			font-size: 150%;
+			padding: 0.5%;
+			color: white;
+			font-family: 'WebFont', sans-serif;
+			border-radius: 12%}	
+
+#die {width: 33.3%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	}
+
+#button_die  {background-color: #ff1a1a;
+			font-size: 150%;
+			padding: 0.5%;
+			color: white;
+			font-family: 'WebFont', sans-serif;
+			border-radius: 12%}	
+
+#das {width: 33.3%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;}
+
+#button_das {background-color: #009900;
+			font-size: 150%;
+			padding: 0.5%;
+			color: white;
+			font-family: 'WebFont', sans-serif;
+			border-radius: 12%}	
+		
+
+.facts {display: none;}
+		}
+
+
+
+
+
+
+
+
+
+/*ODZUB 
+margin: 0 auto; 
+.group:before,
+.menu:before,
+.container:after, 
+.group:after,
+.menu:after {
+    content: " "; 
+    display: table; 
+}
+
+.container:after,
+.group:after,
+.menu:after {
+    clear: both;
+}
+
+.container,
+.group,
+.menu {
+    *zoom: 1;
+}
+*/
+
