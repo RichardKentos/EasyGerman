@@ -396,16 +396,12 @@ header {
 header h1 {
 	font-weight: bolder;
 	font-size: 1.5rem;
-	background-color: #ff1a1a;
 			}		
-header a {width: 100%; }
-
 #german {
 		margin-left:45%;
 }
 
 /* LECTIONS MENU - BURGER */
-
 .burger {
 		display: block;
 		font-size: 2em;
@@ -422,8 +418,6 @@ header a {width: 100%; }
 	border: none;
 }
 
-.lections_header {
-		display: none; }
 
 .dropdown-content {
 	position: absolute;
