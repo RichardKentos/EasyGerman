@@ -426,7 +426,7 @@ header h1 {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	width: 30%;
+	width: 100%;
 	z-index: 5;
 	background-color: white;
 	color: rgb(29, 29, 29);
