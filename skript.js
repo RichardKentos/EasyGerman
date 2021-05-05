@@ -50,7 +50,7 @@ burger.addEventListener("click", () => {
 	else {
 		dropdown.style.display = "none";
 	}
-})
+});
 
 
 // ADDING OWN WORDS
