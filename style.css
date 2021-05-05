@@ -415,8 +415,8 @@ header h1 {
 		color: #ffce00;
 }
 
-.menu_align {
-	text-align: right;
+.lections_header {
+	display: none;
 }
 
 .menu {
@@ -426,14 +426,15 @@ header h1 {
 .dropdown-content {
 	display: none;
 	position: absolute;
+	width: 30%;
 	z-index: 5;
 	background-color: white;
-	color: #ffce00;
+	color: rgb(29, 29, 29);
 	left:0;
 }
 
 .words {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #ffce00;
 }
 
 /* NUMBER OF POINTS AND LECTIONS */
@@ -496,7 +497,7 @@ content {
 .buttons {
 	font-size: 1.6rem;
 	font-weight: bold;
-	width: 20%;
+	width: 100%;
 	padding: 5%;
 	color: white;
 	font-family: 'Gruppo'; 

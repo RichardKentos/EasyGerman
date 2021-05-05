@@ -41,13 +41,14 @@ ownWordsButton.addEventListener("click", () => {
 })
 
 const burger = document.querySelector(".burger");
+const dropdown = document.querySelector(".dropdown-content");
 
 burger.addEventListener("click", () => {
-	if (ownWords.style.display === "none") {
-		ownWords.style.display = "block";
+	if (dropdown.style.display === "none") {
+		dropdown.style.display = "block";
 	}
 	else {
-		ownWords.style.display = "none";
+		dropdown.style.display = "none";
 	}
 })
 
