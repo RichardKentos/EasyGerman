@@ -40,6 +40,17 @@ ownWordsButton.addEventListener("click", () => {
 	}
 })
 
+const burger = document.querySelector(".burger");
+
+burger.addEventListener("click", () => {
+	if (ownWords.style.display === "none") {
+		ownWords.style.display = "block";
+	}
+	else {
+		ownWords.style.display = "none";
+	}
+})
+
 
 // ADDING OWN WORDS
 var vlastnewords = [];
