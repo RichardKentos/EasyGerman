@@ -1,5 +1,3 @@
-/* {outline: 2px solid red} */
-
 @font-face {
 	font-family: 'WebFont';
 	src: url('WebFont.ttf');
@@ -335,47 +333,20 @@ footer .flags img {
 	width: 5%;
 }
 
-/* footer > .flag {
-	margin-left: 7%;
-}
-
-footer > .flag ~ .flag {
-	margin-left: none
-}	 */
-
-/* .flag {
-	display: inline-block;
-	border-radius: 20%;
-	width: 5%;
-	height:auto;
-	margin-right: 10%;
-			}
- */
 
 
+/* --------------------------------------------------------------------
+				DESIGN PRE MOBILY - OTOČENÉ NA VÝŠKU 
+   --------------------------------------------------------------------
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* DESIGN PRE MOBILY - OTOČENÉ NA VÝŠKU */
-
-	@media only	screen
-				and (min-width: 320px)
-				and	 (max-width: 480px)
-				and (orientation: portrait)
-							{
+@media only	screen
+		and (min-width: 320px)
+		and	 (max-width: 480px)
+		/* and (orientation: portrait) */
+	{
 
 @font-face {
-
 		font-family: 'WebFont';
 		src: url('WebFont.ttf');
 }	
@@ -385,14 +356,10 @@ footer > .flag ~ .flag {
 body {
 		margin:0;
 		padding: 0;
-		overflow: visible;
 		}
 
-.travel {
-	height: auto;
-	width: 100vw;
-}
-.germany_img {
+
+/* .germany_img {
 			border-radius: 50%;
 			position: absolute;
 			top: 25%;
@@ -418,18 +385,18 @@ body {
   100% {
     opacity:0;
   }
-}
+} */
 
 /* THE HEADING */
+header {
+	z-index: 1;
+	width: 100%
+	}
 
-header {border-radius:0%;
-		margin-right: -10%;
-		z-index: 1;
-		width: 100vw}
-
-header h1 {font-weight: bolder;
-			font-size: 2.5em;
-			margin-left: -10%;
+header h1 {
+	font-weight: bolder;
+	font-size: 1.5rem;
+	background-color: #ff1a1a;
 			}		
 header a {width: 100%; }
 
@@ -447,16 +414,15 @@ header a {width: 100%; }
 }
 
 .menu_align {
-	text-align: left;
+	text-align: right;
 }
 
 .menu {
 	width: 10%;
 	border: none;
-	
 }
 
-.lections_p {
+.lections_header {
 		display: none; }
 
 .dropdown-content {
@@ -481,35 +447,30 @@ header a {width: 100%; }
 	margin-left: 0;
 	margin-top: 5%;
 	padding: 0;
-
 		}
 
 #points {
 	display:none;
 	font-size: 1.2em;
-
 		}
 
 #cislo_points {
 	display: none;
 	font-size: 1.2em;
-
 	}		
 
 #lecPoints {
 	display: none;
 	font-size: 1.2em;
-
 }
 
 #lektion {
 	display: none;
 	font-size: 1.2em;
-
 }
 
 /* ENTERING OWN WORDS */
-.enter-own {
+.own-words-div {
 	display: none;
 	}		
 
@@ -519,26 +480,21 @@ content {
 	z-index: -1;
 }
 
-#text_box {width: 100%;
-			display: block;
-			position: relative;
-			
-			}
-
 #test_word {
 	text-align: center;
 	position: relative;
 	display: block;
 	width: 100%;
-	padding-bottom: 5%;
-	margin-bottom: 10%;
-	margin-left: 0;
-	font-size: 250%;
-	border:none;
-	z-index: -1;	
+	font-size: 2rem;
 	}
 
-#der {width: 20%;
+#text_box {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+/* #der {width: 20%;
 	margin-left:5%;
 	text-align: center;
 	position: relative;
@@ -605,17 +561,14 @@ content {
 	background-color: #009900;
 	color: black;
 }		
+ */
 
 
-
-.wrong {position: absolute;
-		top: 20%;
+.wrong {
 		color: red;
 				} 
 
 .correct {
-	position: absolute;
-	top: 25%;
 	color: green;
 }
 
@@ -632,10 +585,8 @@ footer {
 	margin-top: 70%;	
 }
 
-.flag {
-	width: 20%;
-	height: auto;
-	margin-bottom: 5%;
+footer .flags {
+	display: none;
 }
 
 
@@ -652,7 +603,7 @@ footer {
 	@media only screen
 		and (min-device-width: 481px)
 		and (max-device-width: 1023px)
-		and (orientation: landscape)
+		/* and (orientation: landscape) */
 				
 			{
 @font-face {
@@ -745,35 +696,4 @@ body {
 .facts {display: none;}
 		}
 
-
-
-
-
-
-
-
-
-/*ODZUB 
-margin: 0 auto; 
-.group:before,
-.menu:before,
-.container:after, 
-.group:after,
-.menu:after {
-    content: " "; 
-    display: table; 
-}
-
-.container:after,
-.group:after,
-.menu:after {
-    clear: both;
-}
-
-.container,
-.group,
-.menu {
-    *zoom: 1;
-}
-*/
 
